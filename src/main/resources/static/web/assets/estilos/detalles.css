@@ -1,0 +1,1046 @@
+/* Estilo Normalizado */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    min-height: 70vw;
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    min-height: 15vh;
+    background-color: black;
+}
+
+#header-nav {
+    background-color: black !important;
+    min-height: 14vh;
+    z-index: 1;
+}
+
+.navbar {
+    height: 15vh;
+    width: 100%;
+}
+
+.logo-header {
+    width: 10rem;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+#navbarNav {
+    justify-content: end;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.container-fluid {
+    background-color: black;
+}
+
+.navbar-nav {
+    background-color: black;
+    font-size: 120%;
+    gap: 1rem;
+    align-items: center !important;
+    padding: 1rem;
+    margin-bottom: .5rem;
+}
+
+.estilo-hover:hover {
+    color: #f6be5f !important;
+    transition: all 0.3s;
+}
+
+.svg-hover:hover {
+    stroke: #f6be5f !important;
+    transition: all 0.3s;
+}
+
+.active {
+    color: #f6be5f !important;
+}
+
+
+
+
+
+.grupo {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+    margin-bottom: 0.2rem;
+}
+
+.inputBusqueda {
+    width: 100%;
+    height: 1.8rem;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+
+.inputBusqueda::placeholder {
+    color: #9e9ea7;
+}
+
+.inputBusqueda:focus,
+.inputBusqueda:hover {
+    outline: none;
+    border-color: #f6be5f;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.iconoBusqueda {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    fill: black;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/* ---------- MAIN ---------- */
+.contenedorFiltros {
+    padding-top: 2rem;
+    margin-left: 2rem;
+    width: 50%;
+}
+
+main {
+    min-height: 80vh;
+    /* Ajustar */
+    /* background-color:  #754d25; */
+    background-color: whitesmoke;
+    color: black;
+}
+
+.contenedorImgInfo {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+}
+
+.contenedorImagen {
+    overflow: hidden;
+    /* border-radius: 2rem; */
+    /* border: solid 2px black; */
+    padding-top: 2rem;
+}
+
+.contenedorValor {
+    position: relative;
+    color: white;
+    width: fit-content;
+    bottom: 450px;
+    left: 420px;
+}
+
+.imagenProducto {
+    width: 30rem !important;
+    transition: transform 0.5s ease;
+}
+
+.imagenProducto:hover {
+    transform: scale(1.3);
+}
+
+.contenedorInfo {
+    /* width: 20rem; */
+    margin-top: 1rem;
+}
+
+.precioProducto {
+    font-weight: bolder;
+    font-size: 250%;
+}
+
+.cantidad {
+    width: 10rem;
+    margin-left: 2rem;
+    margin-top: 3rem;
+}
+
+
+
+
+.contenedorCarrito {
+    width: 10rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.contenedorTexto {
+    margin-top: 4rem;
+    font-weight: 130%;
+    font-weight: bold;
+    width: 20rem;
+}
+
+.botCarrito {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    border: solid 1px #f6be5f;
+    font-family: inherit;
+    height: 2rem;
+}
+
+.botonDefecto,
+.hoverBtn {
+    background-color: black;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.hoverBtn {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    transform: translate(0%, 100%);
+    width: 20rem;
+}
+
+.botonDefecto span {
+    color: hsl(0, 0%, 100%);
+}
+
+.hoverBtn span {
+    color: #f6be5f;
+}
+
+.botCarrito:hover .botonDefecto {
+    transform: translate(0%, -100%);
+}
+
+.botCarrito:hover .hoverBtn {
+    transform: translate(0%, 0%);
+    width: 20rem;
+}
+
+
+
+
+
+.productosRelacionados {
+    margin-top: 3rem;
+    font-size: 160%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* PANTALLA DE CARGA */
+[v-cloak] {
+    display: none;
+}
+
+
+
+/* -------FOOTER------- */
+footer {
+    background-color: white;
+}
+
+.incentivo {
+    margin: 0;
+}
+
+.subscribite {
+    background-color: black;
+    color: white;
+    width: 100%;
+    min-height: 12rem;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    min-width: 200px;
+    max-width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+    margin-top: 1rem;
+}
+
+.input-container input {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid rgb(176 190 197);
+    background-color: transparent;
+    padding: 0.625rem 70px 0.625rem 0.75rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    color: rgb(69 90 100);
+    outline: none;
+    transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+    border: 1px solid #f6be5f;
+}
+
+.invite-btn {
+    position: absolute;
+    width: 65px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    z-index: 10;
+    border-radius: 4px;
+    background-color: #f6be5f;
+    color: #fff;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    transition: .6s ease;
+}
+
+.invite-btn:hover {
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 8px;
+}
+
+.input-container input:placeholder-shown~.invite-btn {
+    pointer-events: none;
+    background-color: gray;
+    opacity: 0.5;
+}
+
+
+/* Boton sociales */
+.link {
+    text-decoration: none;
+    text-align: center;
+}
+
+.nombreLink {
+    margin-top: .5rem;
+}
+
+.social-links,
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.social-btn {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    margin: 5px;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.social-btn svg {
+    height: 24px;
+    width: 24px;
+}
+
+.social-btn span {
+    width: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.social-btn:hover {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.social-btn:hover span {
+    padding: 2px;
+    width: 80px;
+}
+
+#linkedin svg {
+    fill: #0e76a8;
+}
+
+#github {
+    fill: #333;
+}
+
+
+
+
+
+
+
+
+/* TARJETAS PRODUCTOS */
+
+.contenedorValor2 {
+    position: absolute;
+    color: white;
+    width: fit-content;
+    top: 10px;
+    left: 245px;
+}
+
+.contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5rem;
+    padding: 3%;
+}
+
+.product-box {
+    position: relative;
+    /* border: 1.5px solid black; */
+    height: 23rem;
+    width: 18rem;
+    background-color: #ededed;
+    overflow: hidden;
+    transition: .3s ease;
+    padding-bottom: .5rem;
+    border-radius: 1rem;
+}
+
+.product-box:hover {
+    transform: scale(1.05);
+}
+
+.product-box:hover img {
+    transform: scale(1.2);
+}
+
+.product-img {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0.5rem;
+    transition: 1s ease;
+}
+
+.product-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 2rem;
+    margin-top: 0.5rem;
+    background-color: #ededed;
+    width: 100%;
+    padding-top: .5rem;
+}
+
+.price {
+    font-weight: 300;
+    margin: auto;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+}
+
+.add-cart {
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background: hsl(249, 32%, 17%);
+}
+
+
+
+
+
+
+/* CLASE BOTON DE COMPRA */
+.botonCarrito {
+    position: relative;
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: black;
+    border: solid 1px #f6be5f;
+    font-family: inherit;
+    height: 2rem;
+}
+
+.default-btn,
+.hover-btn {
+    background-color: black;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+
+.hover-btn {
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    transform: translate(0%, 100%);
+}
+
+.default-btn span {
+    color: hsl(0, 0%, 100%);
+}
+
+.hover-btn span {
+    color: #f6be5f;
+}
+
+.botonCarrito:hover .default-btn {
+    transform: translate(0%, -100%);
+    /* width: 10rem; */
+}
+
+.botonCarrito:hover .hover-btn {
+    transform: translate(0%, 0%);
+}
+
+@media (max-width: 550px) {
+    .imagenProducto {
+        width: 25rem !important;
+    }
+
+    .contenedorValor {
+        bottom: 380px;
+        left: 350px;
+    }
+}
+
+@media (max-width: 470px) {
+    .imagenProducto {
+        width: 22rem !important;
+    }
+
+    .contenedorValor {
+        bottom: 330px;
+        left: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .imagenProducto {
+        width: 18rem !important;
+    }
+
+    .contenedorValor {
+        bottom: 250px;
+        left: 210px;
+    }
+}
+
+@media (max-width: 355px) {
+    .imagenProducto {
+        width: 16rem !important;
+    }
+}
+
+
+
+/* CARRITO */
+:root {
+    --main-color: #fd4646;
+    --text-color: #171427;
+    --bg-color: #fff;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+    color: black;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+
+
+.MasOMenos {
+    /* height: 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    width: 100px;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--text-color);
+}
+
+
+#cart-icon {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: white;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.cart.active {
+    right: 0;
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: black;
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.item-cart {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .nav {
+        padding: 11px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .cart {
+        width: 320px;
+    }
+}
+
+@media (max-width: 360px) {
+    .shop {
+        margin-top: 1rem !important;
+    }
+
+    .cart {
+        width: 280px;
+    }
+}
+
+.cart-quantity {
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.cart-content {
+    height: 67vh;
+    /* altura máxima del div */
+    overflow: auto;
+    /* añade scroll automáticamente cuando sea necesario */
+}
+
+
+
+
+
+
+/* PANTALLA DE CARGA */
+[v-cloak] {
+    display: none;
+}
+
+.loading-screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.pl {
+    width: 6em;
+    height: 6em;
+}
+
+.pl__ring {
+    animation: ringA 2s linear infinite;
+}
+
+.pl__ring--a {
+    stroke: #f42f25;
+}
+
+.pl__ring--b {
+    animation-name: ringB;
+    stroke: #f49725;
+}
+
+.pl__ring--c {
+    animation-name: ringC;
+    stroke: #255ff4;
+}
+
+.pl__ring--d {
+    animation-name: ringD;
+    stroke: #f42582;
+}
+
+/* Animations */
+@keyframes ringA {
+
+    from,
+    4% {
+        stroke-dasharray: 0 660;
+        stroke-width: 20;
+        stroke-dashoffset: -330;
+    }
+
+    12% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -335;
+    }
+
+    32% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -595;
+    }
+
+    40%,
+    54% {
+        stroke-dasharray: 0 660;
+        stroke-width: 20;
+        stroke-dashoffset: -660;
+    }
+
+    62% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -665;
+    }
+
+    82% {
+        stroke-dasharray: 60 600;
+        stroke-width: 30;
+        stroke-dashoffset: -925;
+    }
+
+    90%,
+    to {
+        stroke-dasharray: 0 660;
+        stroke-width: 20;
+        stroke-dashoffset: -990;
+    }
+}
+
+@keyframes ringB {
+
+    from,
+    12% {
+        stroke-dasharray: 0 220;
+        stroke-width: 20;
+        stroke-dashoffset: -110;
+    }
+
+    20% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -115;
+    }
+
+    40% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -195;
+    }
+
+    48%,
+    62% {
+        stroke-dasharray: 0 220;
+        stroke-width: 20;
+        stroke-dashoffset: -220;
+    }
+
+    70% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -225;
+    }
+
+    90% {
+        stroke-dasharray: 20 200;
+        stroke-width: 30;
+        stroke-dashoffset: -305;
+    }
+
+    98%,
+    to {
+        stroke-dasharray: 0 220;
+        stroke-width: 20;
+        stroke-dashoffset: -330;
+    }
+}
+
+@keyframes ringC {
+    from {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: 0;
+    }
+
+    8% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -5;
+    }
+
+    28% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -175;
+    }
+
+    36%,
+    58% {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -220;
+    }
+
+    66% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -225;
+    }
+
+    86% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -395;
+    }
+
+    94%,
+    to {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -440;
+    }
+}
+
+@keyframes ringD {
+
+    from,
+    8% {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: 0;
+    }
+
+    16% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -5;
+    }
+
+    36% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -175;
+    }
+
+    44%,
+    50% {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -220;
+    }
+
+    58% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -225;
+    }
+
+    78% {
+        stroke-dasharray: 40 400;
+        stroke-width: 30;
+        stroke-dashoffset: -395;
+    }
+
+    86%,
+    to {
+        stroke-dasharray: 0 440;
+        stroke-width: 20;
+        stroke-dashoffset: -440;
+    }
+}
+
+
+
+
+
+/* BLUR */
+.clase-blur {
+    filter: blur(5px);
+}
+
+.clase-no-blur {
+    filter: none;
+
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f6be5f;
+    border-radius: 10px;
+}

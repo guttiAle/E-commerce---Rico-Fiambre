@@ -1,0 +1,531 @@
+/* Estilo Normalizado */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  /* background-color: whitesmoke; */
+}
+
+/* PANTALLA DE CARGA */
+[v-cloak] {
+  display: none;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  min-height: 15vh;
+  background-color: black;
+}
+
+#header-nav {
+  background-color: black !important;
+  min-height: 14vh;
+  z-index: 1;
+}
+
+.navbar {
+  height: 15vh;
+  width: 100%;
+}
+
+.logo-header {
+  width: 10rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#navbarNav {
+  justify-content: end;
+  align-items: center;
+  font-size: .9rem;
+}
+
+.container-fluid {
+  background-color: black;
+}
+
+.navbar-nav {
+  background-color: black;
+  font-size: 120%;
+  gap: 1rem;
+  align-items: center !important;
+  padding: 1rem;
+  margin-bottom: .5rem;
+}
+
+.estilo-hover:hover {
+  color: #f6be5f !important;
+  transition: all 0.3s;
+}
+
+.svg-hover:hover {
+  stroke: #f6be5f !important;
+  transition: all 0.3s;
+}
+
+.active {
+  color: #f6be5f !important;
+}
+
+
+
+
+
+
+
+.grupo {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: 190px;
+  margin-bottom: 0.2rem;
+}
+
+.inputBusqueda {
+  width: 100%;
+  height: 1.8rem;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: .3s ease;
+}
+
+.inputBusqueda::placeholder {
+  color: #9e9ea7;
+}
+
+.inputBusqueda:focus,
+.inputBusqueda:hover {
+  outline: none;
+  border-color: #f6be5f;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.iconoBusqueda {
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  fill: black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ---------- MAIN ---------- */
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: whitesmoke;
+
+}
+
+main {
+  min-height: 80vh;
+  /* Ajustar */
+  /* background-color:  #754d25; */
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* ---------- MAIN ---------- */
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  min-height: 80vh;
+  /* Ajustar */
+  /* background-color:  #754d25; */
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: white;
+}
+
+.incentivo {
+  margin: 0;
+}
+
+.subscribite {
+  background-color: black;
+  color: white;
+  width: 100%;
+  min-height: 12rem;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  height: 2rem;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+  margin-top: 1rem;
+}
+
+.input-container input {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgb(176 190 197);
+  background-color: transparent;
+  padding: 0.625rem 70px 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(69 90 100);
+  outline: none;
+  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-container input:focus {
+  border: 1px solid #f6be5f;
+}
+
+.invite-btn {
+  position: absolute;
+  width: 65px;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  z-index: 10;
+  border-radius: 4px;
+  background-color: #f6be5f;
+  color: #fff;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  transition: .6s ease;
+}
+
+.invite-btn:hover {
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+  border-radius: 8px;
+}
+
+.input-container input:placeholder-shown~.invite-btn {
+  pointer-events: none;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+
+/* Boton sociales */
+.link {
+  text-decoration: none;
+  text-align: center;
+}
+
+.nombreLink {
+  margin-top: .5rem;
+}
+
+.social-links,
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn:hover {
+  width: 150px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 80px;
+}
+
+#linkedin svg {
+  fill: #0e76a8;
+}
+
+#github {
+  fill: #333;
+}
+
+
+
+/************************* PAGINA COMPRA **************************/
+
+.payment-info {
+  background: whitesmoke;
+  padding: 10px;
+  border-radius: 6px;
+  color: black;
+  font-weight: bold;
+  top: 1rem;
+  
+}
+
+.product-details {
+  padding: 10px;
+}
+
+body {
+  background: #eee;
+}
+
+.cart {
+  background: #fff;
+}
+
+.p-about {
+  font-size: 12px;
+}
+
+.table-shadow {
+  -webkit-box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
+  box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
+}
+
+.type {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.item-description {
+  gap: 1rem;
+}
+
+
+label.radio {
+  cursor: pointer;
+}
+
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+label.radio span {
+  padding: 1px 12px;
+  border: 2px solid #ddd8d8;
+  display: inline-block;
+  color: #8f37aa;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+label.radio input:checked+span {
+  border-color: #ffffff2f;
+  background-color: rgba(129, 129, 129, 0.541);
+  color: #fff;
+}
+
+.credit-inputs {
+  background: #ffffff2f;
+  color: black !important;
+  border-color: #ffffff2f;
+}
+
+.credit-inputs::placeholder {
+  color: black;
+  font-size: 13px;
+}
+
+.credit-card-label {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.form-control.credit-inputs:focus {
+  background: #0000002f;
+  border: #ffffff2f;
+}
+
+.line {
+  border-bottom: 1px solid rgb(102, 102, 221);
+}
+
+.information span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.information {
+  margin-bottom: 5px;
+}
+
+.items {
+  -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08);
+}
+
+.spec {
+  font-size: 11px;
+}
+
+#cabalLogo {
+  padding-top: 5px;
+}
+
+/************************* OTROS/*/
+/* boton pagar */
+.contenedorCarrito {
+  width: 10rem;
+  /* margin-left: 2rem;
+  margin-top: 1rem; */
+}
+
+.contenedorTexto {
+  margin-top: 4rem;
+  font-weight: 130%;
+  font-weight: bold;
+  width: 20rem;
+}
+
+.botCarrito {
+  position: relative;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: black;
+  border: solid 1px #f6be5f;
+  font-family: inherit;
+  height: 2rem;
+}
+
+.botonDefecto,
+.hoverBtn {
+  background-color: black;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.hoverBtn {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  transform: translate(0%, 100%);
+  width: 20rem;
+}
+
+.botonDefecto span {
+  color: hsl(0, 0%, 100%);
+}
+
+.hoverBtn span {
+  color: #f6be5f;
+}
+
+.botCarrito:hover .botonDefecto {
+  transform: translate(0%, -100%);
+}
+
+.botCarrito:hover .hoverBtn {
+  transform: translate(0%, 0%);
+  width: 20rem;
+}
+
+/* ----------- */
+/* .span{
+  font-size: 15px !important;
+} */
+.cart-remove {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+#separacionComps{
+  margin-top: 1rem;
+}
+
+/* BANNER */
+
+.bannerCompra {
+  background-image: url(../imagenes/Banner-compras-opcion2.gif);
+  height: 35vw;
+  background-size: 105%;
+  background-position-y: 70%;
+  background-position-x: 50%;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f6be5f;
+  border-radius: 10px;
+}
